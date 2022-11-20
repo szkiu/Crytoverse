@@ -1,0 +1,1 @@
+export const URL_INDIVIDUAL_COIN = `https://api.coingecko.com/api/v3/coins/`;

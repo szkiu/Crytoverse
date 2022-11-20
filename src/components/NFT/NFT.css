@@ -1,0 +1,161 @@
+@media screen and (min-width: 0px) and (max-width: 767px){
+  .fiat_titles-alone{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .fiat_titles{
+    display: block;
+  }
+  
+  .fiat_container-exchanges{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 0;
+    margin-right: 0;
+    border: 1px solid #b9b9b9;
+    font-size: 1.6rem;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .fiat_container-exchanges h4{
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .fiat_container-exchanges img{
+    height: 28px;
+    margin: 0 .3rem;
+  }
+  
+  .fiat_container-exchanges-1{
+    font-weight: 500;
+    display: block;
+    font-size: 1.2rem !important;
+    align-items: center;
+  }
+  
+  .fiat_container-exchanges-2{
+    justify-self: center;
+    font-size: .68rem !important;
+    font-weight: 500;
+  } 
+  
+  .fiat_container-exchanges-3{
+    font-weight: 500;
+    font-size: 1.2rem !important;
+    justify-self: end;
+  }
+
+  .fiat_container-exchanges-1::before{
+    content: "Name: ";
+    font-weight: 400;
+    font-size: 1.2rem !important;
+  }
+
+  .fiat_container-exchanges-2::before{
+    content: "Sign: ";
+    position: relative;
+    top: .01rem;
+    font-size: 1.2rem !important;
+    font-weight: 400;
+  }
+
+  .fiat_container-exchanges-3::before{
+    content: "Symbol: ";
+    font-size: 1.2rem !important;
+    font-weight: 400;
+  }
+  
+  h4{
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .fiat_titles-alone{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .fiat_titles{
+    display: block;
+  }
+  
+  .fiat_container-exchanges{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 0;
+    margin-right: 0;
+    border: 1px solid #b9b9b9;
+    font-size: 1.6rem;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .fiat_container-exchanges h4{
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .fiat_container-exchanges img{
+    height: 28px;
+    margin: 0 .3rem;
+  }
+  
+  .fiat_container-exchanges-1{
+    font-weight: 500;
+    display: block;
+    font-size: 1.3rem !important;
+    align-items: center;
+  }
+  
+  .fiat_container-exchanges-2{
+    justify-self: center;
+    font-size: 1.3rem !important;
+    font-weight: 500;
+  } 
+  
+  .fiat_container-exchanges-3{
+    font-weight: 500;
+    font-size: 1.3rem !important;
+    justify-self: end;
+  }
+
+  .fiat_container-exchanges-1::before{
+    content: "Name: ";
+    font-weight: 400;
+    font-size: 1.5rem !important;
+  }
+
+  .fiat_container-exchanges-2::before{
+    content: "Sign: ";
+    font-size: 1.5rem !important;
+    font-weight: 400;
+  }
+
+  .fiat_container-exchanges-3::before{
+    content: "Symbol: ";
+    font-size: 1.5rem !important;
+    font-weight: 400;
+  }
+  
+  h4{
+    margin: 0;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+.modal-error{
+  width:100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(234, 234, 234);
+}
+
+.modal-errors{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border: 2px solid rgb(184, 184, 184);
+}

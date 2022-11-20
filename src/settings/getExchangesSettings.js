@@ -1,0 +1,1 @@
+export const URL_EXCHANGES = "https://api.coingecko.com/api/v3/exchanges?per_page=50";

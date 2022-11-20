@@ -1,0 +1,225 @@
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .exchange_titles-alone{
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .container-exchange_container-exchanges{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .exchange_container-exchanges {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 0;
+    margin-right: 0;
+    font-size: 1.4rem;
+    border: 1px solid #b9b9b9;
+    padding: 1rem;
+  }
+
+  .exchange_container-exchanges h4 {
+    margin: 0;
+  }
+
+  .exchange_container-exchanges img {
+    height: 28px;
+    margin: 0 0.3rem;
+  }
+
+  .exchange_container-exchanges-1 {
+    font-weight: 500;
+    display: flex;
+    gap: .1rem;
+    margin-bottom: .6rem !important;
+    justify-content: center;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid #b9b9b9;
+  }
+
+  .exchange_container-exchanges-2::before{
+    content: "24Hs Trade: ";
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  .exchange_container-exchanges-3::before{
+    content: "Trust Rank: ";
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .exchange_container-exchanges-4::before{
+    content: "Born: ";
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .exchange_container-exchanges-2,
+  .exchange_container-exchanges-3,
+  .exchange_container-exchanges-4 {
+    justify-self: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: .4rem !important;
+  }
+
+  h4 {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .exchange_titles-alone{
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .container-exchange_container-exchanges{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .exchange_container-exchanges {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 0;
+    margin-right: 0;
+    border: 1px solid #b9b9b9;
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  .exchange_container-exchanges h4 {
+    margin: 0;
+  }
+
+  .exchange_container-exchanges img {
+    height: 28px;
+    margin: 0 0.3rem;
+  }
+
+  .exchange_container-exchanges-1 {
+    font-weight: 500;
+    display: flex;
+    gap: .1rem;
+    margin-bottom: .6rem !important;
+    align-items: center;
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: .6rem;
+  }
+
+  .exchange_container-exchanges-2::before{
+    content: "24Hs Trade: ";
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  .exchange_container-exchanges-3::before{
+    content: "Trust Rank: ";
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .exchange_container-exchanges-4::before{
+    content: "Born: ";
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .exchange_container-exchanges-2,
+  .exchange_container-exchanges-3,
+  .exchange_container-exchanges-4 {
+    justify-self: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: .4rem !important;
+  }
+
+  h4 {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .exchange_titles {
+    display: grid;
+    padding: 0 2rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+    margin-bottom: 0.6rem;
+  }
+
+  .exchange_titles-2,
+  .exchange_titles-3,
+  .exchange_titles-4,
+  .exchange_titles-1 {
+    font-weight: 400;
+  }
+
+  .exchange_titles-2,
+  .exchange_titles-3,
+  .exchange_titles-4 {
+    justify-self: center;
+  }
+
+  .exchange_container-exchanges {
+    text-decoration: none;
+    color: #000;
+    display: grid;
+    padding: 0.6rem 2rem;
+    grid-auto-flow: column;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fff;
+    border-top: 1px solid rgb(184, 184, 184);
+    border-right: 1px solid rgb(184, 184, 184);
+    border-left: 1px solid rgb(184, 184, 184);
+  }
+
+  .exchange_container-exchanges h4 {
+    margin: 0;
+  }
+
+  .exchange_container-exchanges img {
+    height: 28px;
+    margin: 0 0.3rem;
+  }
+
+  .exchange_container-exchanges-1 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+
+  .exchange_container-exchanges-2,
+  .exchange_container-exchanges-3,
+  .exchange_container-exchanges-4 {
+    justify-self: center;
+    font-weight: 400;
+  }
+
+  h4 {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}

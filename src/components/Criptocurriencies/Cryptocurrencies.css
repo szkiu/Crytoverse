@@ -1,0 +1,97 @@
+@media screen and (min-width: 0px){
+  .cryptocurencies_main{
+    padding: 1rem;
+    background-color: rgb(234, 234, 234);
+  }
+
+  .home_coin{
+    margin: 0;
+  }
+  
+  .cryptocurencies_coins{
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .cryptocurencies_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.6rem auto;
+  }
+  
+  .cryptocurencies_search input{
+    padding: .4rem 3.4rem .4rem .5rem;
+    outline: none;
+    border: 1px solid rgb(205, 205, 205);
+  }
+  
+  .cryptocurencies_search input::placeholder{
+    color: rgb(205, 205, 205);
+  }
+}
+
+@media screen and (min-width: 768px){
+  .cryptocurencies_main{
+    padding: 1rem;
+    background-color: rgb(234, 234, 234);
+  }
+
+  .home_coin{
+    margin: 0;
+  }
+  
+  .cryptocurencies_coins{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .cryptocurencies_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.6rem auto;
+  }
+  
+  .cryptocurencies_search input{
+    padding: 1rem 5rem 1rem 1rem;
+    outline: none;
+    border: 1px solid rgb(205, 205, 205);
+  }
+  
+  .cryptocurencies_search input::placeholder{
+    color: rgb(186, 186, 186);
+    font-size: 1.1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .cryptocurencies_main{
+    padding: 1rem;
+    background-color: rgb(234, 234, 234);
+  }
+  
+  .cryptocurencies_coins{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .cryptocurencies_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.6rem auto;
+  }
+  
+  .cryptocurencies_search input{
+    padding: .3rem 3rem .3rem .4rem;
+    outline: none;
+    border: 1px solid rgb(205, 205, 205);
+  }
+  
+  .cryptocurencies_search input::placeholder{
+    color: rgb(205, 205, 205);
+  }
+}

@@ -1,0 +1,98 @@
+.home_oneNFT{
+  padding: 1rem 3rem 0 3rem;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.home_oneNFT-1280{
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.oneNFT_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+  margin: 0 auto;
+}
+
+.oneNFT_des{
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.oneNFT_des p {
+  font-size: 1.005rem;
+  letter-spacing: .5px;
+  word-spacing: .5px;
+}
+
+.oneNFT_des img{
+  height: 100%;
+}
+
+.oneNFT_titles{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-right: 1px solid rgb(184, 184, 184);
+  border-bottom: 1px solid rgb(184, 184, 184);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  background-color: white;
+}
+
+.oneNFT_titles-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-top: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgb(184, 184, 184);
+  border-left: 1px solid rgb(184, 184, 184);
+}
+
+@media screen and (min-width: 0px){
+  .coin_main{
+    padding: 1rem;
+    background-color: rgb(234, 234, 234);
+  }
+
+  .coin-title{
+    margin-bottom: .6rem !important;
+  }
+  
+  .coin-title img{
+    height: 30px;
+  }
+  
+  .coin_des-title{
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .coin_main{
+    padding: 1rem;
+    height: 100vh;
+    background-color: rgb(234, 234, 234);
+  }
+
+  .coin-title{
+    font-size: 1.6rem;
+  }
+  
+  .coin-title img{
+    height: 60px;
+  }
+  
+  .coin_des-title{
+    margin: 0;
+    font-size: 1.3rem;
+    letter-spacing: .5px;
+    word-spacing: .5px;
+  }
+}
+
