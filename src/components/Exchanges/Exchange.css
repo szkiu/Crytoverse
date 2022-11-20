@@ -40,7 +40,7 @@
     display: flex;
     gap: .1rem;
     margin-bottom: .6rem !important;
-    justify-content: center;
+    justify-content: start;
     padding-bottom: .6rem;
     border-bottom: 1px solid #b9b9b9;
   }
@@ -102,6 +102,7 @@
     margin-bottom: 0;
     margin-right: 0;
     border: 1px solid #b9b9b9;
+
     font-size: 1.6rem;
     padding: 1rem;
   }
@@ -120,7 +121,7 @@
     display: flex;
     gap: .1rem;
     margin-bottom: .6rem !important;
-    align-items: center;
+    justify-content: start;
     border-bottom: 1px solid #b9b9b9;
     padding-bottom: .6rem;
   }

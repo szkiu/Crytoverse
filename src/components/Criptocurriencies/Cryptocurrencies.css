@@ -92,6 +92,7 @@
   }
   
   .cryptocurencies_search input::placeholder{
+    font-size: .8rem;
     color: rgb(205, 205, 205);
   }
 }

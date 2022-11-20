@@ -6,7 +6,7 @@ import ErrorModal from "../Generics/ErrorModal";
 import { getUrlFIAT } from "../../services/getFIAT";
 
 function FIAT() {
-  const mql = matchMedia("(min-width: 768px)");
+  const mql = matchMedia("(min-width: 1280px)");
   const [realMql, setRealMql] = useState();
   const [FIAT, setFIAT] = useState();
   const [isLoading, setIsLoading] = useState(true);

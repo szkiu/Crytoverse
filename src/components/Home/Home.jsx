@@ -29,7 +29,7 @@ function Home() {
         <div className="home">
 
           <Helmet>
-            <title>Home</title>
+            <title>Crytoverse</title>
           </Helmet>
 
           <Nav />
