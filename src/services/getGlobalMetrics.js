@@ -3,7 +3,12 @@ import { URL_GLOBALMETRICS } from "../settings/getGlobalMetricsSettings";
 
 export async function getUrlGlobalMetrics() {
   try {
-    const result = await axios.get(URL_GLOBALMETRICS);
+    const result = await axios.get(URL_GLOBALMETRICS,
+      {
+        headers: {
+          "CMC_PRO_API_KEY": "ec152bca-3221-4e8c-b03c-8219b02b59de"
+        }
+      });
     return [
       {
         name: "Total_Cryptocurrencies",

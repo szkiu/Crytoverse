@@ -159,7 +159,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .exchange_titles {
     display: grid;
     padding: 0 2rem;
