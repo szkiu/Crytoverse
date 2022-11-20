@@ -3,11 +3,7 @@ import { URL_FIAT } from "../settings/getFIATSettings";
 
 export const getUrlFIAT = async () => {
   try {
-    const result = await axios.get(URL_FIAT,  {
-      headers: {
-        "CMC_PRO_API_KEY": "ec152bca-3221-4e8c-b03c-8219b02b59de"
-      }
-    });
+    const result = await axios.get(URL_FIAT);
     if (result.data.status.error_message !== null) throw new Error("Error");
     let lastResult = [];
 
@@ -21,6 +17,8 @@ export const getUrlFIAT = async () => {
 
     return lastResult;
   } catch (e) {
+    console.log(e)
+
     return {
       message: e.message,
       name: e.name,
