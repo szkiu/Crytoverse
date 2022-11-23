@@ -6,6 +6,7 @@ import Cryptocurriencies from "./components/Criptocurriencies/Cryptocurriencies"
 import Exchanges from "./components/Exchanges/Exchanges";
 import FIAT from "./components/FIAT/FIAT";
 import NFT from "./components/NFT/NFT";
+import New from "./components/News/New";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/exchanges" element={<Exchanges/>} />
 
         <Route path="/FIAT"  element={<FIAT/>} />
+
+        <Route path="/News"  element={<New/>} />
 
         <Route path="/NFT" element={<NFT/>} />
 

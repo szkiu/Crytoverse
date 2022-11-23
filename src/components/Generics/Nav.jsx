@@ -5,9 +5,10 @@ import {
   AiOutlineHome,
   AiOutlineBars,
   AiOutlineCloseCircle,
+  AiOutlineBulb
 } from "react-icons/ai";
 import { TfiStatsUp } from "react-icons/tfi";
-import { BsCurrencyExchange, BsCashStack } from "react-icons/bs";
+import { BsCurrencyExchange } from "react-icons/bs";
 import { SiSlickpic } from "react-icons/si";
 
 function Nav() {
@@ -48,8 +49,8 @@ function Nav() {
               </NavLink>
             </li>
             <li className="navbar-link">
-              <NavLink to="/FIAT">
-                <BsCashStack /> FIAT
+              <NavLink to="/News">
+                <AiOutlineBulb /> News
               </NavLink>
             </li>
             <li className="navbar-link">
@@ -93,8 +94,8 @@ function Nav() {
                     </NavLink>
                   </li>
                   <li className="navbar-link-1280">
-                    <NavLink to="/FIAT">
-                      <BsCashStack /> FIAT
+                    <NavLink to="/News">
+                      <AiOutlineBulb /> News
                     </NavLink>
                   </li>
                   <li className="navbar-link-1280">

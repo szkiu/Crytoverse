@@ -4,6 +4,7 @@ import "./Exchange.css";
 import Nav from "../Generics/Nav";
 import { getExchange } from "../../services/getExchanges";
 import ErrorModal from "../Generics/ErrorModal";
+import Footer from "../Generics/Footer";
 
 function Exchanges() {
   const mql = matchMedia("(min-width: 1280px)");
@@ -35,6 +36,7 @@ function Exchanges() {
           </Helmet>
           <Nav></Nav>
 
+          <div>
           <main className="home_main">
             <div className="exchange_titles">
               {realMql ? (
@@ -92,6 +94,9 @@ function Exchanges() {
               )}
             </div>
           </main>
+
+          {exchanges !== undefined && !isLoading ? <Footer /> : null}
+          </div>
         </div>
       ) : (
         <ErrorModal error={exchanges} />

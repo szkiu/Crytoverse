@@ -1,7 +1,8 @@
 @media screen and (min-width: 0px) and (max-width: 767px){
   .home_main{
-    padding: 1rem;
     background-color: rgb(234, 234, 234);
+    min-height: 100vh;
+    padding: 1rem;
   }
 
   h1{
@@ -11,6 +12,7 @@
   h1, .home_title-secondary{
     margin: 0;
     font-weight: 600;
+    
   }
 
   .active{
@@ -21,16 +23,13 @@
     padding: 0 .6rem;
     margin-top: .6rem;
     margin-bottom: 1.6rem;
+    
     display: grid;
     text-align: center;
-    border-top: 1px solid rgb(184, 184, 184);
-    border-left: 1px solid rgb(184, 184, 184);
     grid-template-columns: repeat(2, 1fr);
   }
 
   .home_info-card{
-    border-right: 1px solid rgb(184, 184, 184);
-    border-bottom: 1px solid rgb(184, 184, 184);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -48,6 +47,7 @@
   }
 
   .home_coins{
+    margin-bottom: 1.4rem;
     margin-top: 1.4rem;
     display: grid;
     gap: .8rem;
@@ -96,11 +96,13 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
   .home_main{
-    padding: 1rem;
     background-color: rgb(234, 234, 234);
+    padding: 1rem;
+    min-height: 100vh;
   }
 
   h1{
+    
     text-align: center;
   }
 
@@ -121,16 +123,13 @@
     margin-top: 1rem;
     margin-bottom: 1.6rem;
     padding: 0 .6rem;
+    
     display: grid;
     text-align: center;
-    border-top: 1px solid rgb(184, 184, 184);
-    border-left: 1px solid rgb(184, 184, 184);
     grid-template-columns: repeat(2, 1fr);
   }
 
   .home_info-card{
-    border-right: 1px solid rgb(184, 184, 184);
-    border-bottom: 1px solid rgb(184, 184, 184);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -149,6 +148,7 @@
   }
 
   .home_coins{
+    margin-bottom: 1.4rem;
     margin-top: 1.4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -220,8 +220,9 @@
   }
   
   .home_main{
-    padding: 1rem;
     background-color: rgb(234, 234, 234);
+    min-height: 100vh;
+    padding: 1rem;
   }
   
   .home_info{
@@ -250,10 +251,12 @@
   }
   
   .home_coins{
+    margin-bottom: 1.4rem;
     margin-top: 1.4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .8rem
+    gap: .8rem;
+    
   }
   
   .home_coin{

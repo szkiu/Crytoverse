@@ -1,0 +1,28 @@
+footer{
+  background-color: rgb(0, 24, 52);
+}
+  
+.martop{
+  margin-top: 7.4rem;
+}
+  
+footer p {
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: .9rem;
+  margin: 0;
+  padding-bottom: 1rem;
+  padding-top: .4rem;
+}
+  
+.footer-social {
+  display: flex;
+  gap: .6rem;
+  justify-content: center;
+}
+  
+footer div a {
+  color: #fff;
+  font-size: 2rem;
+}

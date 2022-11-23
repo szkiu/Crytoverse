@@ -1,52 +1,59 @@
 import axios from "axios";
-import { URL_GLOBALMETRICS } from "../settings/getGlobalMetricsSettings";
 
 export async function getUrlGlobalMetrics() {
   try {
-    const result = await axios.get(URL_GLOBALMETRICS);
+    const options = {
+      method: 'GET',
+      url: 'https://coinranking1.p.rapidapi.com/stats',
+      params: {referenceCurrencyUuid: 'yhjMzLPhuIDl'},
+      headers: {
+        'X-RapidAPI-Key': 'f8bd9615e2msha491048fcacc91bp1e62dfjsnf28c73978dc5',
+        'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
+      }
+    };
+
+    const result = await axios.request(options);
+
     return [
       {
         name: "Total_Cryptocurrencies",
-        num: result.data.data.total_cryptocurrencies,
+        num: result.data.data.totalCoins,
       },
       { 
         name: "Total_Exchanges",
-        num: result.data.data.total_exchanges 
+        num: result.data.data.totalExchanges 
       },
-      { 
-        name: "Active_Cryptocurrencies",
-        num: result.data.data.active_cryptocurrencies 
-      },
-      { 
-        name: "Active_Exchanges",
-        num: result.data.data.active_exchanges },
       { 
         name: "Btc_Dominance",
-        num: result.data.data.btc_dominance 
+        num: result.data.data.btcDominance 
       },
       {
-        name: "Btc_Dominance_24h_Percentage_Change",
-        num: result.data.data.btc_dominance_24h_percentage_change,
+        name: "Newest Coin",
+        coinName: result.data.data.newestCoins[0].name,
+        coinSym: result.data.data.newestCoins[0].symbol,
+      },
+      {
+        name: "Best Coin",
+        coinName: result.data.data.bestCoins[0].name,
+        coinSym: result.data.data.bestCoins[0].symbol,
       },
       { 
         name: "Total_Market_Cap",
-        num: result.data.data.quote.USD.total_market_cap 
+        num: result.data.data.totalMarketCap
       },
       { 
-        name: "Stablecoin_Market_Cap",
-        num: result.data.data.stablecoin_market_cap 
+        name: "Total Markets",
+        num: result.data.data.totalMarkets
       },
       { 
-        name: "Stablecoin_Volume_24h",
-        num: result.data.data.stablecoin_volume_24h 
+        name: "Total_Volume_24h",
+        num: result.data.data.total24hVolume
       },
     ];
   } catch (e) {
     return {
       message: e.message,
       name: e.name,
-      status: e.response.status,
-      statusText: e.response.statusText,
     };
   }
 }

@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 import "./Cryptocurrencies.css";
 import { useURLCoins } from "../../customhooks/useURLCoins";
 import Nav from "../Generics/Nav";
-import Coins from "../Home/Coins";
 import ErrorModal from "../Generics/ErrorModal";
+import Coins from "../Home/Coins";
+import Footer from "../Generics/Footer";
 
 function Cryptocurriencies() {
   const { coins, isLoading } = useURLCoins();
@@ -29,27 +30,35 @@ function Cryptocurriencies() {
 
           <Nav />
 
-          <main className="cryptocurencies_main">
-            <div className="cryptocurencies_search">
-              <input
-                placeholder="Search Cryptoccurencie"
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </div>
-
-            {coins !== undefined && !isLoading ? (
-              <div className="cryptocurencies_coins">
-                <Coins
-                  cryptocurrencies={true}
-                  coins={newCoins ? newCoins : coins}
+          <div>
+            <main className="cryptocurencies_main">
+              <div className="cryptocurencies_search">
+                <input
+                  placeholder="Search Cryptoccurencie"
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
                 />
               </div>
-            ) : (
-              <b>Loading...</b>
-            )}
-          </main>
+
+              {coins !== undefined && !isLoading ? (
+                <div className="cryptocurencies_coins">
+                  <Coins
+                    cryptocurrencies={true}
+                    coins={newCoins ? newCoins : coins}
+                  />
+                </div>
+              ) : (
+                <b>Loading...</b>
+              )}
+            </main>
+
+            {coins !== undefined && !isLoading ? (
+                <Footer/>
+              ) : (
+                null
+              )}
+          </div>
         </div>
       ) : (
         <ErrorModal error={coins} />
