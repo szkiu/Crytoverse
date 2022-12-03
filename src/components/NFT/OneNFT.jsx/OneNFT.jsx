@@ -14,6 +14,7 @@ function OneNFT() {
   const [NFT, setNFT] = useState();
   const mql = matchMedia("(min-width: 768px)");
   const [realMql, setRealMql] = useState();
+  window.scroll(0, 0);
 
   useEffect(() => {
     mql.matches ? setRealMql(true) : setRealMql(false);

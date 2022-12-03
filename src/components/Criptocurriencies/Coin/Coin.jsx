@@ -12,6 +12,8 @@ function Coin() {
   const [coin, setCoin] = useState();
   const location = useLocation();
 
+  window.scroll(0, 0)
+
   useEffect(() => {
     setIsLoading(true);
     const result = getOneCoin(location.pathname.split("/")[2]);
