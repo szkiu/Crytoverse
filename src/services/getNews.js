@@ -2,21 +2,32 @@ import axios from "axios";
 
 export default async function getNews() {
   try {
+    // const options = {
+    //   method: "GET",
+    //   url: "https://bing-news-search1.p.rapidapi.com/news/search",
+    //   params: {
+    //     q: "Description",
+    //     count: "50",
+    //     freshness: "Day",
+    //     textFormat: "Raw",
+    //     safeSearch: "Off",
+    //   },
+    //   headers: {
+    //     "X-BingApis-SDK": "true",
+    //     "X-RapidAPI-Key": "2fdffa66bamshb89bffa46284cacp171c2djsn06f35f74cc14",
+    //     "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
+    //   },
+    // };
+
     const options = {
-      method: "GET",
-      url: "https://bing-news-search1.p.rapidapi.com/news/search",
-      params: {
-        q: "Description",
-        count: "50",
-        freshness: "Day",
-        textFormat: "Raw",
-        safeSearch: "Off",
-      },
+      method: 'GET',
+      url: 'https://bing-news-search1.p.rapidapi.com/news/search',
+      params: {q: 'Description', freshness: 'Day', textFormat: 'Raw', safeSearch: 'Off'},
       headers: {
-        "X-BingApis-SDK": "true",
-        "X-RapidAPI-Key": "2fdffa66bamshb89bffa46284cacp171c2djsn06f35f74cc14",
-        "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
-      },
+        'X-BingApis-SDK': 'true',
+        'X-RapidAPI-Key': '2fdffa66bamshb89bffa46284cacp171c2djsn06f35f74cc14',
+        'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com'
+      }
     };
 
     const result = await axios.request(options);

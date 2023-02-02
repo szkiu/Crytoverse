@@ -48,11 +48,11 @@ function Nav() {
                 <BsCurrencyExchange /> Exchanges
               </NavLink>
             </li>
-            <li className="navbar-link">
+            {/* <li className="navbar-link">
               <NavLink to="/News">
                 <AiOutlineBulb /> News
               </NavLink>
-            </li>
+            </li> */}
             <li className="navbar-link">
               <NavLink to="/NFT" end>
                 <SiSlickpic /> NFT
@@ -93,11 +93,11 @@ function Nav() {
                       <BsCurrencyExchange /> Exchanges
                     </NavLink>
                   </li>
-                  <li className="navbar-link-1280">
+                  {/* <li className="navbar-link-1280">
                     <NavLink to="/News">
                       <AiOutlineBulb /> News
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li className="navbar-link-1280">
                     <NavLink to="/NFT" end>
                       <SiSlickpic /> NFT
