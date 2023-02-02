@@ -14,7 +14,7 @@ export default async function getNews() {
       },
       headers: {
         "X-BingApis-SDK": "true",
-        "X-RapidAPI-Key": "f8bd9615e2msha491048fcacc91bp1e62dfjsnf28c73978dc5",
+        "X-RapidAPI-Key": "2fdffa66bamshb89bffa46284cacp171c2djsn06f35f74cc14",
         "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
       },
     };
